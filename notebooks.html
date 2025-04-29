@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Informe machine learning severidad de accidentes en Estados Unidos." href="intro.html" />
+    <link rel="prev" title="Parcial Machine learning." href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,7 +175,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Informe machine learning severidad de accidentes en Estados Unidos.
+                    Parcial Machine learning.
                 </a>
             </li>
         </ul>
@@ -918,7 +918,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a6c646628e19177c741dbf1b3509b14e2a51f107aa1678b27760f2fa6f1ec003.png" src="_images/a6c646628e19177c741dbf1b3509b14e2a51f107aa1678b27760f2fa6f1ec003.png" />
+<img alt="_images/e49121f86d98b8978d5a7b91b4111dcef90a45e686fabfff2ec93516ab1a9094.png" src="_images/e49121f86d98b8978d5a7b91b4111dcef90a45e686fabfff2ec93516ab1a9094.png" />
 </div>
 </div>
 <p>Se identifica lo siguiente:</p>
@@ -1110,9 +1110,6 @@ dtype: float64
 5            precipitacion total por hora   1.069973
 6                 maxima rafaga de viento   1.315007
 7                  presion atmosferica max  4.757647
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -2670,7 +2667,7 @@ memory usage: 20.7 MB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/71bb31e736b0792e9ebb442b4af0b745a6ae1250675b24307afc1f211ae7aae3.png" src="_images/71bb31e736b0792e9ebb442b4af0b745a6ae1250675b24307afc1f211ae7aae3.png" />
+<img alt="_images/b726f7b2e507862f76d3d529f043b2ea5ccf541e5f860db13a539bf79988076c.png" src="_images/b726f7b2e507862f76d3d529f043b2ea5ccf541e5f860db13a539bf79988076c.png" />
 </div>
 </div>
 <p>Se observa que mayor direcciones asociadas a una tarjeta de credito no influencia en la posibilidad de que sea fraude la transaccion, además se ve una que el hecho de que coincidan o no los nombres en la tarjeta no dictamina si sera fraude una transaccion.</p>
@@ -2862,9 +2859,6 @@ memory usage: 20.7 MB
 </div>
 <img alt="_images/8d12ff31d580b6614ade8f416cf6b4aca2c7da48ccb9850991cc50b7bf8d486c.png" src="_images/8d12ff31d580b6614ade8f416cf6b4aca2c7da48ccb9850991cc50b7bf8d486c.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Entrenando modelo: SVc
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -4956,31 +4950,16 @@ ________________________________________________________________________________
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tf</span><span class="o">.</span><span class="n">debugging</span><span class="o">.</span><span class="n">set_log_device_placement</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-
-
-<span class="n">history_unet</span> <span class="o">=</span> <span class="n">unet_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
-    <span class="n">train_dataset</span><span class="p">,</span>
-    <span class="n">validation_data</span><span class="o">=</span><span class="n">val_dataset</span><span class="p">,</span>
-    <span class="n">epochs</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
-    <span class="n">callbacks</span><span class="o">=</span><span class="n">callbacks</span> 
-<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 1/30
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">history_unet</span> <span class="o">=</span> <span class="n">unet_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
-    <span class="n">train_dataset</span><span class="p">,</span>
-    <span class="n">validation_data</span><span class="o">=</span><span class="n">val_dataset</span><span class="p">,</span>
-    <span class="n">epochs</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
-    <span class="n">callbacks</span><span class="o">=</span><span class="n">callbacks</span>  <span class="c1"># Los callbacks que definimos antes</span>
-<span class="p">)</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">tf</span><span class="o">.</span><span class="n">debugging</span><span class="o">.</span><span class="n">set_log_device_placement</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;tf&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -5025,7 +5004,7 @@ ________________________________________________________________________________
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Informe machine learning severidad de accidentes en Estados Unidos.</p>
+        <p class="prev-next-title">Parcial Machine learning.</p>
       </div>
     </a>
     <a class="right-next"
