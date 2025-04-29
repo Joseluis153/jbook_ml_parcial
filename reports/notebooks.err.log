@@ -30,7 +30,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-df = pd.read_csv(r"C:\Users\jose_\OneDrive\Documentos guardados\Maestria analisis de datos\Machine Learning Likni\Machine learning Likir\Informe_Machine_Learning\US_Accidents_March23.csv")
-
+['models = {', '    "Knn": (KNeighborsClassifier(), {\'kneighborsclassifier__n_neighbors\': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}),', '    "Naive Bayes": (GaussianNB(), {}),', '    "XGBoost": (xgb.XGBClassifier(eval_metric=\'logloss\'), {\'xgbclassifier__n_estimators\': [100, 200, 300], \'xgbclassifier__max_depth\': [3, 4, 5]}),', '    "SVc": (SVC(probability=True), {\'svc__C\': [0.01, 1, 10], \'svc__gamma\': [0.01, 1, 10], \'svc__kernel\': ["rbf"]}),']
+...
+['        "Test set score": grid.score(X_test, y_test)', '    }', '    results_df = pd.concat([results_df, pd.DataFrame([result])], ignore_index=True)', '', 'print(results_df)']
 -------------------
 
